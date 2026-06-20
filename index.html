@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gwendal Gencey | Portfolio Science des Données</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">GwendalG.</div>
+        <ul class="nav-links">
+            <li><a href="#">Accueil</a></li>
+            <li><a href="#presentation">Présentation</a></li>
+            <li><a href="#competences">Compétences & SAE</a></li>
+            <li><a href="#experiences">Stage & Alternance</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="Gwendal_Gencey_CV.pdf" download class="btn-download-nav">Mon CV 📄</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Transformer la donnée en valeur : <br><span>Mon aventure en BUT Science des Données</span></h1>
+            <p>Découvrez comment je transforme des données brutes en indicateurs de performance et en outils d'aide à la décision.</p>
+        </div>
+    </header>
+
+    <section id="presentation" class="presentation-section">
+        <div class="pres-container">
+            
+            <div class="pres-box profile-box">
+                <h2>À propos de moi</h2>
+                <p>Je m'appelle <strong>Gwendal Gencey</strong>, étudiant en Science des Données à l'IUT de Vannes. Curieux, rigoureux et passionné par le développement logiciel et les technologies d'avenir telles que l'Intelligence Artificielle, j'aime donner du sens aux données brutes pour relever des défis métiers complexes.</p>
+                <p>Mon parcours spécialisé en <strong>Exploration et Modélisation Statistique (EMS)</strong> m'apporte une solide logique mathématique et informatique, renforcée par une ouverture internationale (certifiée par un score <strong>TOEIC de 940 points</strong>) et une forte adaptabilité acquise sur le terrain.</p>
+            </div>
+
+            <div class="pres-box formation-box">
+                <h2>Le BUT Science des Données</h2>
+                <p>Le Bachelor Universitaire de Technologie (BUT) science des données forme des professionnels capables de piloter l'intégralité du cycle de vie de la donnée. À l'IUT de Vannes, fort de l'expertise historique de son département (ex-STID), la formation s'articule autour d'une pédagogie par projet exigeante liée à 4 piliers de compétences :</p>
+                <ul class="formation-list">
+                    <li><strong>Traiter :</strong> Collecter, nettoyer et automatiser les flux de données.</li>
+                    <li><strong>Analyser :</strong> Explorer et extraire de la valeur par des analyses statistiques.</li>
+                    <li><strong>Modéliser :</strong> Anticiper et prédire le futur (Spécificité du parcours EMS).</li>
+                    <li><strong>Valoriser :</strong> Scénariser les résultats via des dashboards et solutions décisionnelles.</li>
+                </ul>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="competences" class="slider-section">
+        <h2>Mes compétences</h2>
+        <p class="subtitle">Cliquez sur une catégorie pour explorer les projets (SAE)</p>
+        
+        <div class="carousel-container">
+            <button id="prevBtn" class="carousel-btn">❮</button>
+            <div class="carousel-track-container">
+                <ul class="carousel-track">
+                    <li class="carousel-slide">
+                        <a href="projets.html?category=traiter" class="card">
+                            <div class="card-icon"><i class='bx bx-server'></i></div>
+                            <h3>Traiter</h3>
+                            <p>Importation, nettoyage, traitement des structures et automatisation des flux complexes.</p>
+                        </a>
+                    </li>
+                    <li class="carousel-slide">
+                        <a href="projets.html?category=analyser" class="card">
+                            <div class="card-icon"><i class='bx bx-search-alt-2'></i></div>
+                            <h3>Analyser</h3>
+                            <p>Analyses descriptives, exploration multivariée et traitement d'enquêtes statistiques.</p>
+                        </a>
+                    </li>
+                    <li class="carousel-slide">
+                        <a href="projets.html?category=modeliser" class="card">
+                            <div class="card-icon"><i class='bx bx-network-chart'></i></div>
+                            <h3>Modéliser (EMS)</h3>
+                            <p>Régression linéaire, séries temporelles, traitement de la non-réponse et Machine Learning.</p>
+                        </a>
+                    </li>
+                    <li class="carousel-slide">
+                        <a href="projets.html?category=valoriser" class="card">
+                            <div class="card-icon"><i class='bx bx-pie-chart-alt-2'></i></div>
+                            <h3>Valoriser</h3>
+                            <p>Datavisualisation dynamique, conception de dashboards décisionnels et reporting.</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <button id="nextBtn" class="carousel-btn">❯</button>
+        </div>
+    </section>
+
+    <section id="experiences" class="experience-section">
+        <h2>Expériences Professionnelles</h2>
+        <p class="subtitle">Cliquez sur une carte pour voir les détails méthodologiques et technologiques</p>
+        <div class="exp-container">
+            <a href="stage.html" class="exp-card-link">
+                <div class="exp-box">
+                    <span class="tag-stage">Stage - BUT 2</span>
+                    <h3>Ministère de la Justice (SSER)</h3>
+                    <h4>Assistant Statisticien <span>En savoir plus ➔</span></h4>
+                    <p>Support opérationnel à l’enquête nationale sur les médiateurs civils et développement d’un package R. Implémentation de modèles statistiques pour le redressement de la non-réponse (K-NN, Hot Deck, Régression).</p>
+                </div>
+            </a>
+            <a href="alternance.html" class="exp-card-link">
+                <div class="exp-box future">
+                    <span class="tag-alternance">Alternance - BUT 3 (À venir)</span>
+                    <h3>La Poste (Service Véhicules)</h3>
+                    <h4>Data Scientist / Analyste en Alternance <span>En savoir plus ➔</span></h4>
+                    <p>Suivi de la transformation et décarbonation de la flotte de véhicules. Mission axée sur la mise en place d'indicateurs de performance clés (KPIs), le traitement de données massives et l'affichage décisionnel.</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <footer id="contact" class="contact-section">
+        <h2>Me Contacter</h2>
+        <p>Intéressé par mon profil ? N'hésitez pas à télécharger mon CV ou à me joindre directement.</p>
+        <div class="contact-info">
+            <p><strong><i class='bx bx-user'></i> Nom :</strong> Gwendal Gencey</p>
+            <p><strong><i class='bx bx-phone'></i> Téléphone :</strong> 06 51 50 59 65</p>
+            <p><strong><i class='bx bx-map'></i> Localisation :</strong> IUT de Vannes / Région Nantaise</p>
+            <div class="cv-container">
+                <a href="Gwendal_Gencey_CV.pdf" download class="btn-cv">
+                    <i class='bx bxs-download'></i> Télécharger mon CV complet (PDF)
+                </a>
+            </div>
+        </div>
+        <p class="footer-credits">2026 Gwendal Gencey</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
