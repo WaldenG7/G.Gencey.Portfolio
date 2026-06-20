@@ -3,494 +3,128 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mes Projets & SAE | Gwendal Gencey</title>
+    <title>Détails Stage | Gwendal Gencey</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
 
-    <!-- Barre de navigation -->
-    <nav class="navbar">
-        <div class="logo">GwendalG.</div>
-        <ul class="nav-links">
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="index.html#presentation">Présentation</a></li>
-            <li><a href="index.html#competences">Compétences & SAE</a></li>
-            <li><a href="index.html#experiences">Stage & Alternance</a></li>
-            <li><a href="index.html#contact">Contact</a></li>
-        </ul>
-    </nav>
-
     <div class="subpage-container">
         <a href="index.html" class="back-home"><i class='bx bx-arrow-back'></i> Retour à l'accueil</a>
         
-        <h1 id="page-title">Mon Catalogue de Projets</h1>
-        <p class="subtitle" style="text-align: left; margin-bottom: 30px;">Découvrez mes réalisations académiques et options de spécialité, structurées selon le Référentiel National du BUT SD.</p>
+        <span class="tag-stage">Stage de BUT 2</span>
+        <h1>Ministère de la Justice</h1>
+        <p style="color: #94a3b8; font-style: italic;">Structure : Bureau des Statistiques, des Études et de la Recherche (SSER) — Année 2025-2026</p>
 
-        <!-- Menu de filtrage dynamique -->
-        <div class="filter-menu">
-            <button class="filter-btn active" data-filter="all">Tout voir</button>
-            <button class="filter-btn" data-filter="traiter">Traiter</button>
-            <button class="filter-btn" data-filter="analyser">Analyser</button>
-            <button class="filter-btn" data-filter="modeliser">Modéliser</button>
-            <button class="filter-btn" data-filter="valoriser">Valoriser</button>
+        <h2>Sujet & Problématique</h2>
+        <p><strong>Garantir la qualité des enquêtes ministérielles : de la collecte au redressement statistique.</strong></p>
+        <p>Mon stage s'est articulé autour de deux axes principaux : apporter un appui opérationnel complet à l'enquête nationale portant sur les médiateurs civils, et développer une solution méthodologique pérenne et automatisée pour traiter la problématique de la non-réponse (données manquantes).</p>
+
+        <h2>Missions & Réalisations</h2>
+        
+        <div class="mission-block">
+            <h3><i class='bx bx-check-shield' style='color: var(--primary-color); margin-right: 10px;'></i> 1. Data Engineering et Qualité</h3>
+            <p>Nettoyage de la base de données brute de l'enquête et mise en place de contrôles qualité interactifs pour valider la cohérence des réponses terrain.</p>
+            
+            <div class="ac-details-box">
+                <h4><i class='bx bx-git-branch'></i> Association aux Compétences Nationales :</h4>
+                <ul>
+                    <li><span class="pole-label">Pôle 1 : Traiter la donnée</span><br>
+                    <strong>AC 12.02 : Nettoyer, contrôler et préparer les données pour l'analyse</strong> — Application de filtres de cohérence et détection des anomalies de saisie au sein des réponses des médiateurs civils.</li>
+                    
+                    <li><span class="pole-label">Pôle 2 : Analyser</span><br>
+                    <strong>AC 22.01 : Concevoir et gérer une enquête ou un dispositif de collecte</strong> — Suivi opérationnel du protocole de l'enquête nationale et gestion de la base terrain du SSER.</li>
+                </ul>
+            </div>
+
+            <div class="image-gallery">
+                <div class="image-box">
+                    <img src="Capture d'écran 2026-06-12 144146.jpg" alt="Contrôle qualité interactif">
+                    <div class="image-caption">Interface et scripts de contrôle qualité interactif pour la validation des réponses des médiateurs</div>
+                </div>
+                <div class="image-box">
+                    <img src="Capture d'écran 2026-06-14 174610.png" alt="Analyse des anomalies">
+                    <div class="image-caption">Visualisation des anomalies de saisie et détection des incohérences logiques</div>
+                </div>
+            </div>
         </div>
 
-        <div class="projects-grid">
-
-            <!-- ============================================== -->
-            <!-- PÔLE 1 : TRAITER LA DONNÉE                     -->
-            <!-- ============================================== -->
-
-            <!-- Projet Traiter 1 -->
-            <div class="project-card traiter">
-                <div class="project-header">
-                    <span class="p-category"><i class='bx bx-server'></i> Traiter</span>
-                    <span class="p-sae">SAE 2.06</span>
-                </div>
-                <h3>SAE 2.06 : Analyse de données, reporting et datavisualisation</h3>
-                <h5><i class='bx bx-bullseye'></i> Contexte & Objectif</h5>
-                <p>Organisation et centralisation des données d'itinéraires et d'horaires (formats de type GTFS) pour le réseau de transport de la région Bretagne (BreizhGO).</p>
-                <h5><i class='bx bx-git-commit'></i> Démarche technique</h5>
-                <p>Modélisation du schéma de la base de données, implémentation des scripts SQL de création de tables sous PostgreSQL, et gestion des liaisons entre les tables pour garantir la cohérence des informations.</p>
-                
-                <!-- Image insérée : Modèle SAE 2.06 -->
-                <div class="image-box" style="margin: 20px 0;">
-                    <img src="sae206modele.jpg" alt="Modèle SAE 2.06" style="width: 100%; border-radius: 8px;">
-                    <div class="image-caption">Modélisation de la base de données relationnelle BreizhGO</div>
-                </div>
-
-                <div class="ac-details-box">
-                    <h4><i class='bx bx-bookmark'></i> Compétences Validées :</h4>
-                    <ul>
-                        <li><span class="pole-label">Pôle 1 : Traiter</span> <strong>AC 12.01 :</strong> Modéliser, concevoir, implémenter et administrer des bases de données relationnelles ou des entrepôts de données.</li>
-                        <li><span class="pole-label">Pôle 1 : Traiter</span> <strong>AC 12.02 :</strong> Nettoyer, contrôler et préparer les données pour l'analyse décisionnelle.</li>
-                    </ul>
-                </div>
-                <div class="tech-tags">
-                    <span class="tech-tag">SQL</span>
-                    <span class="tech-tag">PostgreSQL</span>
-                    <span class="tech-tag">Modélisation Relationnelle</span>
-                </div>
+        <div class="mission-block">
+            <h3><i class='bx bx-math' style='color: var(--primary-color); margin-right: 10px;'></i> 2. Redressement Statistique</h3>
+            <p>Étude et implémentation de modèles mathématiques pour imputer les valeurs manquantes. J'ai déployé une approche hybride : une sélection des variables prédictives via un <strong>Arbre de décision</strong>, suivie d'une imputation par l'algorithme des <strong>K-Plus Proches Voisins (K-NN)</strong> basé sur ces variables clés.</p>
+            
+            <div class="ac-details-box">
+                <h4><i class='bx bx-git-branch'></i> Association aux Compétences Nationales :</h4>
+                <ul>
+                    <li><span class="pole-label">Pôle 3 : Modéliser (EMS)</span><br>
+                    <strong>AC 42.01 : Mettre en œuvre des modèles de régression</strong> — Utilisation de la modélisation pour estimer des tendances sur les variables quantitatives manquantes.</li>
+                    
+                    <li><span class="pole-label">Pôle 3 : Modéliser (EMS)</span><br>
+                    <strong>AC 42.02 : Mettre en œuvre des méthodes d'apprentissage statistique</strong> — Configuration et exécution de l'algorithme non-paramétrique des K-NN combiné à un arbre de décision.</li>
+                    
+                    <li><span class="pole-label">Pôle 3 : Modéliser (EMS)</span><br>
+                    <strong>AC 42.03 : Évaluer la qualité et comparer les performances de plusieurs modèles</strong> — Analyse comparative de l'impact des biais d'imputation (Hot Deck vs K-NN) sur les distributions marginales.</li>
+                </ul>
             </div>
 
-            <!-- Projet Traiter 2 -->
-            <div class="project-card traiter">
-                <div class="project-header">
-                    <span class="p-category"><i class='bx bx-server'></i> Traiter</span>
-                    <span class="p-sae">SAE 2.03</span>
+            <div class="code-window">
+                <div class="code-header">
+                    <div class="code-dots">
+                        <span class="code-dot red"></span>
+                        <span class="code-dot yellow"></span>
+                        <span class="code-dot green"></span>
+                    </div>
+                    <div class="code-title">redressement_knn_arbre.R</div>
                 </div>
-                <h3>SAE 2.03 : Régression sur données réelles</h3>
-                <h5><i class='bx bx-bullseye'></i> Contexte & Objectif</h5>
-                <p>Mettre en place un processus automatisé pour nettoyer et préparer de grands volumes de données contenant des erreurs de saisie, des doublons ou des formats incorrects.</p>
-                <h5><i class='bx bx-git-commit'></i> Démarche technique</h5>
-                <p>Écriture de scripts de nettoyage sous R et Python au sein de Notebooks pour isoler les anomalies, traiter les valeurs manquantes évidentes et recoder les variables pour les rendre exploitables.</p>
-                <div class="ac-details-box">
-                    <h4><i class='bx bx-bookmark'></i> Compétences Validées :</h4>
-                    <ul>
-                        <li><span class="pole-label">Pôle 1 : Traiter</span> <strong>AC 12.02 :</strong> Nettoyer, contrôler et préparer les données pour l'analyse décisionnelle.</li>
-                        <li><span class="pole-label">Pôle 1 : Traiter</span> <strong>AC 12.03 :</strong> Automatiser la chaîne de traitement informatique des données.</li>
-                    </ul>
-                </div>
-                <div class="tech-tags">
-                    <span class="tech-tag">R / Python</span>
-                    <span class="tech-tag">Nettoyage de données</span>
-                    <span class="tech-tag">Notebooks</span>
-                </div>
+                <pre class="code-body"><code><span class="c-comment"># --- 1. SÉLECTION DES VARIABLES (ARBRE DE DÉCISION) ---</span>
+<span class="c-keyword">library</span>(rpart)
+<span class="c-keyword">library</span>(VIM)
+
+<span class="c-comment"># Entraînement de l'arbre pour identifier les variables explicatives clés</span>
+modele_arbre &lt;- <span class="c-function">rpart</span>(variable_a_imputer ~ ., 
+                      data = donnees_brutes, 
+                      method = <span class="c-string">"class"</span>, 
+                      control = <span class="c-function">rpart.control</span>(cp = <span class="c-number">0.01</span>))
+
+<span class="c-comment"># Récupération automatique des variables importantes de l'arbre</span>
+var_predictives &lt;- <span class="c-function">names</span>(modele_arbre$variable.importance)
+
+<span class="c-comment"># --- 2. IMPUTATION K-NN BASÉE SUR L'ARBRE ---</span>
+<span class="c-comment"># Redressement avec les 5 plus proches voisins selon les variables ciblées</span>
+donnees_imputees &lt;- <span class="c-function">kNN</span>(donnees_brutes, 
+                        variable = <span class="c-string">"variable_a_imputer"</span>, 
+                        k = <span class="c-number">5</span>, 
+                        dist_var = var_predictives, 
+                        imp_var = <span class="c-keyword">FALSE</span>)
+
+<span class="c-function">print</span>(<span class="c-string">"✓ Imputation K-NN post-arbre terminée avec succès."</span>)</code></pre>
             </div>
+        </div>
 
-            <!-- Projet Traiter 3 (Projection) -->
-            <div class="project-card traiter">
-                <div class="project-header">
-                    <span class="p-category"><i class='bx bx-server'></i> Traiter</span>
-                    <span class="p-sae future">Projection BUT 3</span>
-                </div>
-                <h3>Projets de troisième année : Infrastructures de données</h3>
-                <p><strong>Objectif à venir (La Poste) :</strong> Développer des flux de chargement automatisés à grande échelle et interroger des bases de données de taille importante (NoSQL / Spark) pour centraliser les données des capteurs de la flotte nationale.</p>
-                <div class="ac-details-box future-ac">
-                    <h4><i class='bx bx-git-repo-forked'></i> Compétences Visées :</h4>
-                    <ul>
-                        <li><span class="pole-label future-label">Pôle 1 : Traiter</span> <strong>AC 13.04 :</strong> Traiter des données massives (Big Data) / Mettre en place et administrer une architecture de données performante.</li>
-                    </ul>
-                </div>
-                <div class="tech-tags">
-                    <span class="tech-tag" style="background: rgba(168,85,247,0.2); color:#c084fc;">Spark / Hadoop</span>
-                    <span class="tech-tag" style="background: rgba(168,85,247,0.2); color:#c084fc;">NoSQL</span>
-                </div>
+        <div class="mission-block">
+            <h3><i class='bx bx-package' style='color: var(--primary-color); margin-right: 10px;'></i> 3. Industrialisation</h3>
+            <p>Développement et initialisation d'un package R interne dédié au bureau afin d'automatiser et de standardiser ce processus de nettoyage et de redressement pour les prochaines publications institutionnelles.</p>
+            
+            <div class="ac-details-box">
+                <h4><i class='bx bx-git-branch'></i> Association aux Compétences Nationales :</h4>
+                <ul>
+                    <li><span class="pole-label">Pôle 1 : Traiter la donnée</span><br>
+                    <strong>AC 12.03 : Automatiser la chaîne de traitement informatique des données</strong> — Développement d'un package R normé pour encapsuler les scripts de nettoyage et d'imputation dans des fonctions réutilisables.</li>
+                </ul>
             </div>
+        </div>
 
-
-            <!-- ============================================== -->
-            <!-- PÔLE 2 : ANALYSER STATISTIQUEMENT LES DONNÉES  -->
-            <!-- ============================================== -->
-
-            <!-- Projet Analyser 1 -->
-            <div class="project-card analyser">
-                <div class="project-header">
-                    <span class="p-category"><i class='bx bx-search-alt-2'></i> Analyser</span>
-                    <span class="p-sae">SAE 3.03</span>
-                </div>
-                <h3>SAE 3.03 : Description et prévision de données temporelles</h3>
-                <h5><i class='bx bx-bullseye'></i> Contexte & Objectif</h5>
-                <p>Explorer visuellement et analyser de façon approfondie l'évolution d'indices économiques (IPCH habillement et chaussures) marqués par de fortes variations saisonnières et des crises majeures.</p>
-                <h5><i class='bx bx-git-commit'></i> Démarche technique</h5>
-                <p>Utilisation de représentations graphiques avancées et croisées avec la bibliothèque <code>ggplot2</code> sous R Markdown, permettant d'étudier les tendances et de structurer le rapport de synthèse.</p>
-                
-                <!-- Image insérée : Visualisation SAE 3.03 -->
-                <div class="image-box" style="margin: 20px 0;">
-                    <img src="sae303inforapide.png" alt="Visualisation SAE 3.03" style="width: 100%; border-radius: 8px;">
-                    <div class="image-caption">Graphique d'info rapide sous R Markdown</div>
-                </div>
-
-                <div class="ac-details-box">
-                    <h4><i class='bx bx-bookmark'></i> Compétences Validées :</h4>
-                    <ul>
-                        <li><span class="pole-label">Pôle 2 : Analyser</span> <strong>AC 22.02 :</strong> Mettre en œuvre des techniques d'analyse multivariée descriptive.</li>
-                        <li><span class="pole-label">Pôle 2 : Analyser</span> <strong>AC 22.03 :</strong> Mettre en œuvre des méthodes d'estimation et de tests d'hypothèses statistiques.</li>
-                    </ul>
-                </div>
-                <div class="tech-tags">
-                    <span class="tech-tag">R Markdown</span>
-                    <span class="tech-tag">ggplot2</span>
-                    <span class="tech-tag">Exploration Visuelle</span>
-                </div>
-            </div>
-
-            <!-- Projet Analyser 2 -->
-            <div class="project-card analyser">
-                <div class="project-header">
-                    <span class="p-category"><i class='bx bx-search-alt-2'></i> Analyser</span>
-                    <span class="p-sae">Option SIG</span>
-                </div>
-                <h3>Option SIG : Analyse et traitement de cartes</h3>
-                <h5><i class='bx bx-bullseye'></i> Contexte & Objectif</h5>
-                <p>Manipuler des données géographiques complexes pour étudier l'évolution de l'urbanisation en zone inondable (PPRI Val d'Orléans) et évaluer les risques du territoire.</p>
-                <h5><i class='bx bx-git-commit'></i> Démarche technique</h5>
-                <p>Utilisation du logiciel QGIS pour effectuer des jointures spatiales entre les données et les géométries, des requêtes par emplacement et des calculs de zones tampons afin d'extraire des indicateurs précis.</p>
-                <div class="ac-details-box">
-                    <h4><i class='bx bx-bookmark'></i> Compétences Validées :</h4>
-                    <ul>
-                        <li><span class="pole-label">Pôle 2 : Analyser</span> <strong>AC 22.02 :</strong> Mettre en œuvre des techniques d'analyse multivariée descriptive.</li>
-                    </ul>
-                </div>
-                <div class="tech-tags">
-                    <span class="tech-tag">QGIS</span>
-                    <span class="tech-tag">Analyse Spatiale</span>
-                    <span class="tech-tag">Données Géographiques</span>
-                </div>
-            </div>
-
-            <!-- Projet Analyser 3 -->
-            <div class="project-card analyser">
-                <div class="project-header">
-                    <span class="p-category"><i class='bx bx-search-alt-2'></i> Analyser</span>
-                    <span class="p-sae">SAE 1.06</span>
-                </div>
-                <h3>SAE 1.06 : Mise en place d'une enquête</h3>
-                <h5><i class='bx bx-bullseye'></i> Contexte & Objectif</h5>
-                <p>Mesurer la notoriété et analyser les attentes concernant la Maison de la Nature de Belle-Île-en-Mer (CPIE) auprès des résidents de l'île.</p>
-                <h5><i class='bx bx-git-commit'></i> Démarche technique</h5>
-                <p>Création du questionnaire sous Le Sphinx, tri et structuration de la base de données sous Excel, et réalisation d'analyses descriptives univariées, bivariées et de tests statistiques (Chi-deux) pour valider les liens de dépendance.</p>
-                
-                <!-- Image insérée : Questionnaire SAE 1.06 -->
-                <div class="image-box" style="margin: 20px 0;">
-                    <img src="sae106questionnaire.png" alt="Questionnaire SAE 1.06" style="width: 100%; border-radius: 8px;">
-                    <div class="image-caption">Aperçu du questionnaire sous Le Sphinx</div>
-                </div>
-
-                <div class="ac-details-box">
-                    <h4><i class='bx bx-bookmark'></i> Compétences Validées :</h4>
-                    <ul>
-                        <li><span class="pole-label">Pôle 2 : Analyser</span> <strong>AC 22.01 :</strong> Concevoir et gérer une enquête ou un dispositif de collecte de données.</li>
-                        <li><span class="pole-label">Pôle 2 : Analyser</span> <strong>AC 22.03 :</strong> Mettre en œuvre des méthodes d'estimation et de tests d'hypothèses statistiques.</li>
-                    </ul>
-                </div>
-                <div class="tech-tags">
-                    <span class="tech-tag">Le Sphinx / Excel</span>
-                    <span class="tech-tag">Tests du Chi-deux</span>
-                    <span class="tech-tag">Gestion d'Enquête</span>
-                </div>
-            </div>
-
-            <!-- Projet Analyser 4 (Projection) -->
-            <div class="project-card analyser">
-                <div class="project-header">
-                    <span class="p-category"><i class='bx bx-search-alt-2'></i> Analyser</span>
-                    <span class="p-sae future">Projection BUT 3</span>
-                </div>
-                <h3>Projets de troisième année : Analyses spécifiques métiers</h3>
-                <p><strong>Objectif à venir (La Poste) :</strong> Développer et appliquer des modèles d'analyses statistiques approfondies sur l'évolution énergétique, le taux de vétusté et la sinistralité de la flotte nationale.</p>
-                <div class="ac-details-box future-ac">
-                    <h4><i class='bx bx-git-repo-forked'></i> Compétences Visées :</h4>
-                    <ul>
-                        <li><span class="pole-label future-label">Pôle 2 : Analyser</span> <strong>AC 23.01 :</strong> Développer et appliquer des méthodes statistiques complexes à des problématiques métiers spécifiques.</li>
-                    </ul>
-                </div>
-                <div class="tech-tags">
-                    <span class="tech-tag" style="background: rgba(168,85,247,0.2); color:#c084fc;">Analyses Complexes</span>
-                    <span class="tech-tag" style="background: rgba(168,85,247,0.2); color:#c084fc;">Statistiques Métiers</span>
-                </div>
-            </div>
-
-
-            <!-- ============================================== -->
-            <!-- PÔLE 3 : MODÉLISER LES DONNÉES                 -->
-            <!-- ============================================== -->
-
-            <!-- Projet Modéliser 1 -->
-            <div class="project-card modeliser">
-                <div class="project-header">
-                    <span class="p-category"><i class='bx bx-network-chart'></i> Modéliser</span>
-                    <span class="p-sae">SAE 4.01</span>
-                </div>
-                <h3>SAE 4.01 : Expliquer ou prédire une variable quantitative à partir de plusieurs facteurs</h3>
-                <h5><i class='bx bx-bullseye'></i> Contexte & Objectif</h5>
-                <p>Expliquer et prédire le nombre de buts inscrits par les joueurs de handball en Bundesliga à partir d'indicateurs de performance (temps de jeu, poste, budget du club).</p>
-                <h5><i class='bx bx-git-commit'></i> Démarche technique</h5>
-                <p>Ajustement de modèles de régression linéaire multiple, sélection des variables explicatives les plus adaptées, et validation des hypothèses fondamentales par l'étude des résidus (normalité, homoscédasticité).</p>
-                
-                <!-- Image insérée : Régression SAE 4.01 -->
-                <div class="image-box" style="margin: 20px 0;">
-                    <img src="sae401regression.png" alt="Régression SAE 4.01" style="width: 100%; border-radius: 8px;">
-                    <div class="image-caption">Graphique d'analyse de régression</div>
-                </div>
-
-                <div class="ac-details-box">
-                    <h4><i class='bx bx-bookmark'></i> Compétences Validées :</h4>
-                    <ul>
-                        <li><span class="pole-label">Pôle 3 : Modéliser</span> <strong>AC 42.01 :</strong> Mettre en œuvre des modèles de régression.</li>
-                        <li><span class="pole-label">Pôle 3 : Modéliser</span> <strong>AC 42.03 :</strong> Évaluer la qualité et comparer les performances de plusieurs modèles.</li>
-                    </ul>
-                </div>
-                <div class="tech-tags">
-                    <span class="tech-tag">R Studio</span>
-                    <span class="tech-tag">Régression Multiple</span>
-                    <span class="tech-tag">Analyse des Résidus</span>
-                </div>
-            </div>
-
-            <!-- Projet Modéliser 2 -->
-            <div class="project-card modeliser">
-                <div class="project-header">
-                    <span class="p-category"><i class='bx bx-network-chart'></i> Modéliser</span>
-                    <span class="p-sae">SAE 2.06</span>
-                </div>
-                <h3>SAE 2.06 : Analyse de données, reporting et datavisualisation</h3>
-                <h5><i class='bx bx-bullseye'></i> Contexte & Objectif</h5>
-                <p>Prédire les annulations de rotations de navires BreizhGO selon les conditions météorologiques (force du vent, hauteur de houle) pour anticiper les interruptions de service.</p>
-                <h5><i class='bx bx-git-commit'></i> Démarche technique</h5>
-                <p>Entraînement de modèles d'apprentissage statistique (arbres de décision, K-NN), gestion du fort déséquilibre des données par rééchantillonnage, et évaluation des performances par les matrices de confusion et courbes ROC.</p>
-                
-                <!-- Image insérée : Modèle SAE 2.06 -->
-                <div class="image-box" style="margin: 20px 0;">
-                    <img src="sae206modele.jpg" alt="Modèle SAE 2.06" style="width: 100%; border-radius: 8px;">
-                    <div class="image-caption">Modèle de prévision des annulations</div>
-                </div>
-
-                <div class="ac-details-box">
-                    <h4><i class='bx bx-bookmark'></i> Compétences Validées :</h4>
-                    <ul>
-                        <li><span class="pole-label">Pôle 3 : Modéliser</span> <strong>AC 42.02 :</strong> Mettre en œuvre des méthodes d'apprentissage statistique / Machine Learning.</li>
-                        <li><span class="pole-label">Pôle 3 : Modéliser</span> <strong>AC 42.03 :</strong> Évaluer la qualité et comparer les performances de plusieurs modèles.</li>
-                    </ul>
-                </div>
-                <div class="tech-tags">
-                    <span class="tech-tag">Apprentissage Automatique</span>
-                    <span class="tech-tag">Arbres de Décision / K-NN</span>
-                    <span class="tech-tag">Courbes ROC</span>
-                </div>
-            </div>
-
-            <!-- Projet Modéliser 3 (Projection) -->
-            <div class="project-card modeliser">
-                <div class="project-header">
-                    <span class="p-category"><i class='bx bx-network-chart'></i> Modéliser</span>
-                    <span class="p-sae future">Projection BUT 3</span>
-                </div>
-                <h3>Projets de troisième année : Modélisation avancée</h3>
-                <p><strong>Objectif à venir (EMS) :</strong> Maîtriser et appliquer des modèles d'analyse de séries chronologiques complexes (modèles ARIMA, décompositions de tendances et saisonnalités) pour réaliser des prévisions sur l'activité logistique.</p>
-                <div class="ac-details-box future-ac">
-                    <h4><i class='bx bx-git-repo-forked'></i> Compétences Visées :</h4>
-                    <ul>
-                        <li><span class="pole-label future-label">Pôle 3 : Modéliser</span> <strong>AC 42.01 :</strong> Mettre en œuvre des modèles de régression et de prévision temporelle avancée.</li>
-                    </ul>
-                </div>
-                <div class="tech-tags">
-                    <span class="tech-tag" style="background: rgba(168,85,247,0.2); color:#c084fc;">Séries Temporelles</span>
-                    <span class="tech-tag" style="background: rgba(168,85,247,0.2); color:#c084fc;">Modèles ARIMA</span>
-                </div>
-            </div>
-
-
-            <!-- ============================================== -->
-            <!-- PÔLE 4 : VALORISER UNE PRODUCTION              -->
-            <!-- ============================================== -->
-
-            <!-- Projet Valoriser 1 -->
-            <div class="project-card valoriser">
-                <div class="project-header">
-                    <span class="p-category"><i class='bx bx-pie-chart-alt-2'></i> Valoriser</span>
-                    <span class="p-sae">SAE 4.01</span>
-                </div>
-                <h3>SAE 4.01 : Expliquer ou prédire une variable quantitative à partir de plusieurs facteurs</h3>
-                <h5><i class='bx bx-bullseye'></i> Contexte & Objectif</h5>
-                <p>Création d'un tableau de bord interactif sous R Shiny (Criminalité USA) pour rendre des analyses statistiques descriptives et d'analyses en composantes principales (ACP) accessibles à des décideurs.</p>
-                <h5><i class='bx bx-git-commit'></i> Démarche technique</h5>
-                <p>Structuration modulaire de l'application en trois fichiers (<code>global.R</code> pour la préparation initiale, <code>ui.R</code> pour l'interface utilisateur, et <code>server.R</code> pour la logique applicative réactive).</p>
-
-                <!-- Images insérées : Tableau de bord SAE 4.01 -->
-                <div class="image-gallery" style="margin: 20px 0;">
-                    <div class="image-box"><img src="Capture d'écran 2026-06-20 174901.jpg" alt="Interface SAE 401 1"></div>
-                    <div class="image-box"><img src="sae401kpi.png" alt="Interface SAE 401 2"></div>
-                </div>
-
-                <div class="ac-details-box">
-                    <h4><i class='bx bx-bookmark'></i> Compétences Validées :</h4>
-                    <ul>
-                        <li><span class="pole-label">Pôle 4 : Valoriser</span> <strong>AC 32.01 :</strong> Concevoir et développer un outil d'affichage décisionnel ou un tableau de bord.</li>
-                    </ul>
-                </div>
-                <div class="tech-tags">
-                    <span class="tech-tag">R Shiny</span>
-                    <span class="tech-tag">Affichage Décisionnel</span>
-                    <span class="tech-tag">Structure global/ui/server</span>
-                </div>
-            </div>
-
-            <!-- Projet Valoriser 2 -->
-            <div class="project-card valoriser">
-                <div class="project-header">
-                    <span class="p-category"><i class='bx bx-pie-chart-alt-2'></i> Valoriser</span>
-                    <span class="p-sae">SAE 2.06</span>
-                </div>
-                <h3>SAE 2.06 : Analyse de données, reporting et datavisualisation</h3>
-                <h5><i class='bx bx-bullseye'></i> Contexte & Objectif</h5>
-                <p>Restituer les résultats de l'étude des annulations de rotations auprès du client BreizhGO, tout en assurant une gestion rigoureuse de la conduite du projet.</p>
-                <h5><i class='bx bx-git-commit'></i> Démarche technique</h5>
-                <p>Déploiement de l'application sur serveur cloud (Shinyapps.io). Suivi et planification du projet formalisés par la rédaction d'un cahier des charges fonctionnel et l'utilisation d'un diagramme de Gantt pour le respect des jalons.</p>
-
-                <!-- Images insérées : Interface et Gantt SAE 2.06 -->
-                <div class="image-gallery" style="margin-bottom: 20px;">
-                    <div class="image-box"><img src="sae206interface.jpg" alt="Visuel BreizhGO 1"></div>
-                    <div class="image-box"><img src="sae206diagrammegantz.png" alt="Visuel BreizhGO 2"></div>
-                </div>
-
-                <a href="https://hugolecullee.shinyapps.io/breizhgo_application/" target="_blank" class="btn-cv" style="margin-bottom: 20px; font-size: 0.9rem;">
-                    <i class='bx bx-link-external'></i> Consulter l'application en direct
-                </a>
-
-                <div class="ac-details-box">
-                    <h4><i class='bx bx-bookmark'></i> Compétences Validées :</h4>
-                    <ul>
-                        <li><span class="pole-label">Pôle 4 : Valoriser</span> <strong>AC 32.02 :</strong> Communiquer les résultats d'analyses de manière claire, rigoureuse et adaptée au public cible.</li>
-                    </ul>
-                </div>
-                <div class="tech-tags">
-                    <span class="tech-tag">Shinyapps.io</span>
-                    <span class="tech-tag">Diagramme de Gantt</span>
-                    <span class="tech-tag">Cahier des charges</span>
-                </div>
-            </div>
-
-            <!-- Projet Valoriser 3 -->
-            <div class="project-card valoriser">
-                <div class="project-header">
-                    <span class="p-category"><i class='bx bx-pie-chart-alt-2'></i> Valoriser</span>
-                    <span class="p-sae">Option SIG</span>
-                </div>
-                <h3>Option SIG : Cartographie et communication visuelle</h3>
-                <h5><i class='bx bx-bullseye'></i> Contexte & Objectif</h5>
-                <p>Valoriser visuellement des indicateurs géographiques complexes sous forme de livrable de haute qualité pour l'aide à la décision territoriale.</p>
-                <h5><i class='bx bx-git-commit'></i> Démarche technique</h5>
-                <p>Mise en page normée de la carte sous QGIS en appliquant les règles de la sémiologie graphique (choix des couleurs, discrétisation, échelle, légende claire) pour représenter l'urbanisation en zone inondable.</p>
-
-                <!-- Lien vers ton PDF de carte SIG -->
-                <div style="margin: 20px 0; padding: 15px; background: #1f2937; border-radius: 8px; border: 1px solid #334155;">
-                    <p style="margin-bottom: 10px; font-weight: 600;"><i class='bx bx-map-alt' style='color: var(--primary-color);'></i> Production Cartographique Réalisée :</p>
-                    <a href="Carte_option_sig_Qgis.pdf" target="_blank" class="btn-cv" style="font-size: 0.85rem; padding: 8px 15px;">
-                        <i class='bx bx-file'></i> Ouvrir le rendu PDF de la carte QGIS
-                    </a>
-                </div>
-
-                <div class="ac-details-box">
-                    <h4><i class='bx bx-bookmark'></i> Compétences Validées :</h4>
-                    <ul>
-                        <li><span class="pole-label">Pôle 4 : Valoriser</span> <strong>AC 32.02 :</strong> Communiquer les résultats d'analyses de manière claire, rigoureuse et adaptée au public cible.</li>
-                    </ul>
-                </div>
-
-                <h5><i class='bx bx-message-alt-error'></i> Auto-évaluation & Recul critique</h5>
-                <p class="reflection"><em>Difficulté :</em> Définir les seuils de discrétisation pour représenter fidèlement l'indicateur sans fausser la perception visuelle. <br><em>Solution :</em> Analyse de la distribution statistique des bâtiments pour appliquer une méthode adaptée limitant la perte d'information.</p>
-
-                <div class="tech-tags">
-                    <span class="tech-tag">QGIS Layout</span>
-                    <span class="tech-tag">Sémiologie Graphique</span>
-                    <span class="tech-tag">Communication Visuelle</span>
-                </div>
-            </div>
-
-            <!-- Projet Valoriser 4 (Projection) -->
-            <div class="project-card valoriser">
-                <div class="project-header">
-                    <span class="p-category"><i class='bx bx-pie-chart-alt-2'></i> Valoriser</span>
-                    <span class="p-sae future">Projection BUT 3</span>
-                </div>
-                <h3>Projets de troisième année : Communication décisionnelle</h3>
-                <p><strong>Objectif à venir (La Poste) :</strong> Concevoir et déployer des indicateurs stratégiques de performance (KPIs) sous Power BI pour piloter la décarbonation de la flotte de transport et scénariser l'affichage graphique.</p>
-                <div class="ac-details-box future-ac">
-                    <h4><i class='bx bx-git-repo-forked'></i> Compétences Visées :</h4>
-                    <ul>
-                        <li><span class="pole-label future-label">Pôle 4 : Valoriser</span> <strong>AC 33.01 :</strong> Déployer un système d'information décisionnel complet.</li>
-                        <li><span class="pole-label future-label">Pôle 4 : Valoriser</span> <strong>AC 33.02 :</strong> Mettre en œuvre un data storytelling adapté aux besoins des décideurs.</li>
-                    </ul>
-                </div>
-                <div class="tech-tags">
-                    <span class="tech-tag" style="background: rgba(168,85,247,0.2); color:#c084fc;">Power BI</span>
-                    <span class="tech-tag" style="background: rgba(168,85,247,0.2); color:#c084fc;">Data Storytelling</span>
-                </div>
-            </div>
-
+        <h2>Compétences Techniques Mobilisées</h2>
+        <div class="tech-tags">
+            <span class="tech-tag">Langage R</span>
+            <span class="tech-tag">Création de Package R</span>
+            <span class="tech-tag">Modèles d'Imputation (K-NN, Hot Deck)</span>
+            <span class="tech-tag">Régression Linéaire</span>
+            <span class="tech-tag">Gestion de la non-réponse</span>
+            <span class="tech-tag">Statistique Publique</span>
         </div>
     </div>
 
-    <!-- Script JavaScript pour le filtrage dynamique -->
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-            const urlParams = new URLSearchParams(window.location.search);
-            const categoryParam = urlParams.get('category');
-            const buttons = document.querySelectorAll('.filter-btn');
-            const cards = document.querySelectorAll('.project-card');
-
-            function filterProjects(category) {
-                cards.forEach(card => {
-                    if (category === 'all' || card.classList.contains(category)) {
-                        card.style.display = 'block';
-                    } else {
-                        card.style.display = 'none';
-                    }
-                });
-
-                buttons.forEach(btn => {
-                    if (btn.getAttribute('data-filter') === category) {
-                        btn.classList.add('active');
-                    } else {
-                        btn.classList.remove('active');
-                    }
-                });
-            }
-
-            if (categoryParam) {
-                filterProjects(categoryParam);
-            }
-
-            buttons.forEach(button => {
-                button.addEventListener('click', () => {
-                    const filterValue = button.getAttribute('data-filter');
-                    filterProjects(filterValue);
-                });
-            });
-        });
-    </script>
 </body>
 </html>
